@@ -19,23 +19,23 @@
   function BodySetColor(color){
     document.querySelector('body').style.color = color;
   }
-  function BodybackgroundColor(color){
-    document.querySelector('body').style.backgroundColor =        color;
+  function BodySetbackgroundColor(color){
+    document.querySelector('body').style.backgroundColor = color;
   }
   function nightDayHandler(self){
     var target = document.querySelector('body');
     if(self.value === 'Night'){
-      BodybackgroundColor('black');
-      BodySetColor('white');
+      Body.setbackgroundColor('black');
+      Body.setColor('white');
       self.value = 'day';
 
-      LinksSetColor('powderblue');
+      Links.setColor('powderblue');
     } else {
-      BodybackgroundColor('white');
-      BodySetColor('black');
+      Body.setbackgroundColor('white');
+      Body.setColor('black');
       self.value = 'Night';
 
-      LinksSetColor('blue');
+      Links.setColor('blue');
       }
     }
 </script>
