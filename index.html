@@ -9,13 +9,17 @@
 </head>
 
 <body>
-  <input type = "button" value="Night" onclick="
+  <input id = "night-day" type = "button" value="Night" onclick="
+    if(document.querySelector('#night-day').value === 'Night'){
     document.querySelector('body').style.backgroundColor = 'black';
-    document.querySelector('body').style.color = 'white'; ">
-
-  <input type = "button" value="Day" onclick="
+    document.querySelector('body').style.color = 'white';
+    document.querySelector('#night-day').value = 'day'
+    } else {
     document.querySelector('body').style.backgroundColor = 'white';
-    document.querySelector('body').style.color = 'black';">
+    document.querySelector('body').style.color = 'black';
+    document.querySelector('#night-day').value = 'Night'
+    }
+  ">
   
   <h2>What is JavaScript?</h2>
   <p>
