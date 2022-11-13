@@ -6,40 +6,46 @@
   <meta name="viewport" content="width=device-width">
   <title>자바스크립트 연습</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
+  
+<script>
+  function LinksSetColor(color){
+    var alist = document.querySelectorAll('a');
+      var i = 0;
+      while(i<alist.length){
+        alist[i].style.color = color;
+        i = i+1;
+      }
+  }
+  function BodySetColor(color){
+    document.querySelector('body').style.color = color;
+  }
+  function BodybackgroundColor(color){
+    document.querySelector('body').style.backgroundColor =        color;
+  }
+  function nightDayHandler(self){
+    var target = document.querySelector('body');
+    if(self.value === 'Night'){
+      BodybackgroundColor('black');
+      BodySetColor('white');
+      self.value = 'day';
+
+      LinksSetColor('powderblue');
+    } else {
+      BodybackgroundColor('white');
+      BodySetColor('black');
+      self.value = 'Night';
+
+      LinksSetColor('blue');
+      }
+    }
+</script>
 </head>
 
 <body>
   <h1><a href="index.html">WEB</a></h1>
 
-  <input id = "night-day" type = "button" value="Night" onclick="
-    var target = document.querySelector('body');
-    if(this.value === 'Night'){
-    target.style.backgroundColor = 'black';
-    target.style.color = 'white';
-    this.value = 'day';
+  <input id = "night-day" type = "button" value="Night" onclick="nightDayHandler(this);">
 
-    var alist = document.querySelectorAll('a');
-    var i = 0;
-    while(i<alist.length){
-      alist[i].style.color = 'powderblue';
-    i = i+1;
-    }
-    
-    } else {
-    target.style.backgroundColor = 'white';
-    target.style.color = 'black';
-    this.value = 'Night';
-
-    var alist = document.querySelectorAll('a');
-    var i = 0;
-    while(i<alist.length){
-      alist[i].style.color = 'blue';
-    i = i+1;
-    }
-  ">
- 
-
-  
   <h2>What is JavaScript?</h2>
   <p>
     i dont know
