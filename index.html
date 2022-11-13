@@ -10,21 +10,24 @@
 
 <body>
   <input id = "night-day" type = "button" value="Night" onclick="
-    if(document.querySelector('#night-day').value === 'Night'){
-    document.querySelector('body').style.backgroundColor = 'black';
-    document.querySelector('body').style.color = 'white';
-    document.querySelector('#night-day').value = 'day'
+    var target = document.querySelector('body');
+    if(this.value === 'Night'){
+    target.style.backgroundColor = 'black';
+    target.style.color = 'white';
+    this.value = 'day'
     } else {
-    document.querySelector('body').style.backgroundColor = 'white';
-    document.querySelector('body').style.color = 'black';
-    document.querySelector('#night-day').value = 'Night'
+    target.style.backgroundColor = 'white';
+    target.style.color = 'black';
+    this.value = 'Night'
     }
   ">
+
   
   <h2>What is JavaScript?</h2>
   <p>
     i dont know
   </p>
+  
   <script src="script.js"></script>
 
 
