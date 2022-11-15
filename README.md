@@ -1,5 +1,6 @@
 # JSpractice-생활코딩
-https://web-n.github.io/web1_html_internet/
+https://web-n.github.io/web1_html_internet/<br>
+visual studio 사용 방법 : 확장 아이콘 클릭 후 (맨 아래) live server 입력 ritwick dey 확인 후 오른쪽 클릭 하고 open with live server 클릭
 ### 목표 : STEP에 맞추어 코드를 짜보자 - 혼자서 구현할 수 있는 수준을 갖추자
 1.html형태를 짜보자 (간단히 이벤트 체크 박스 정도만 형태를 갖추자)<br>
 2.이벤트를 넣어보자.(input type value onclick)<br>
